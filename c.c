@@ -21,9 +21,29 @@ void test1()
 	SLtPushBack(&plist, 4);
 
 	SLtPrint(plist);
+
+	SLtPushFront(&plist, 11);
+	SLtPushFront(&plist, 22);
+	SLtPushFront(&plist, 33);
+	SLtPushFront(&plist, 44);
+
+	SLtPrint(plist);
+}
+
+void test2()
+{
+	SLT* plist = NULL;
+
+	SLtPushFront(&plist, 11);
+	SLtPushFront(&plist, 22);
+	SLtPushFront(&plist, 33);
+	SLtPushFront(&plist, 44);
+
+	SLtPrint(plist);
 }
 int main()
 {
-	test1();
+	//test1();
+	test2();
 	return 0;
 }
